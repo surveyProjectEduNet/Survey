@@ -7,21 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044EDE991CF04B240058DB71 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044EDE971CF04B240058DB71 /* CouchbaseLite.framework */; };
+		044EDE9A1CF04B240058DB71 /* CouchbaseLiteListener.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044EDE981CF04B240058DB71 /* CouchbaseLiteListener.framework */; };
+		044EDE9D1CF04C5E0058DB71 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044EDE9C1CF04C5E0058DB71 /* User.swift */; };
+		044EDEA01CF04C720058DB71 /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044EDE9F1CF04C720058DB71 /* TwitterClient.swift */; };
+		044EDEA21CF04D0B0058DB71 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044EDEA11CF04D0B0058DB71 /* loginVC.swift */; };
+		044EDEA51CF04ECC0058DB71 /* Utis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044EDEA41CF04ECC0058DB71 /* Utis.swift */; };
+		8458573B1CDDCB5E00B794B8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8458573A1CDDCB5E00B794B8 /* Utilities.swift */; };
 		84F6A6951CDDA85400CE1A81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6A6941CDDA85400CE1A81 /* AppDelegate.swift */; };
 		84F6A6971CDDA85400CE1A81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6A6961CDDA85400CE1A81 /* ViewController.swift */; };
 		84F6A69A1CDDA85400CE1A81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F6A6981CDDA85400CE1A81 /* Main.storyboard */; };
 		84F6A69C1CDDA85400CE1A81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F6A69B1CDDA85400CE1A81 /* Assets.xcassets */; };
 		84F6A69F1CDDA85400CE1A81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F6A69D1CDDA85400CE1A81 /* LaunchScreen.storyboard */; };
+		84F6A6A71CDDA86100CE1A81 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6A6A61CDDA86100CE1A81 /* SystemConfiguration.framework */; };
+		84F6A6A91CDDA86C00CE1A81 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6A6A81CDDA86C00CE1A81 /* Security.framework */; };
+		84F6A6AB1CDDA88000CE1A81 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6A6AA1CDDA88000CE1A81 /* CFNetwork.framework */; };
+		84F6A6AD1CDDA89200CE1A81 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6A6AC1CDDA89200CE1A81 /* libz.1.dylib */; };
+		84F6A6AF1CDDA8A400CE1A81 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6A6AE1CDDA8A400CE1A81 /* libsqlite3.dylib */; };
+		84FDAEA61CEC254E0009E9F4 /* SSRadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FDAEA41CEC254E0009E9F4 /* SSRadioButtonsController.swift */; };
+		84FDAEA71CEC254E0009E9F4 /* SSRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FDAEA51CEC254E0009E9F4 /* SSRadioButton.swift */; };
+		A47B7C3033DB6053B1FE7C02 /* Pods_AppSurveyCouchDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF889AE2B96548BFFEE29A3 /* Pods_AppSurveyCouchDB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044EDE931CF04AEE0058DB71 /* AppSurveyCouchDB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppSurveyCouchDB-Bridging-Header.h"; sourceTree = "<group>"; };
+		044EDE971CF04B240058DB71 /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
+		044EDE981CF04B240058DB71 /* CouchbaseLiteListener.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLiteListener.framework; sourceTree = "<group>"; };
+		044EDE9C1CF04C5E0058DB71 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		044EDE9F1CF04C720058DB71 /* TwitterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterClient.swift; sourceTree = "<group>"; };
+		044EDEA11CF04D0B0058DB71 /* loginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
+		044EDEA41CF04ECC0058DB71 /* Utis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utis.swift; sourceTree = "<group>"; };
+		8458573A1CDDCB5E00B794B8 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = AppSurveyCouchDB/Utilities.swift; sourceTree = "<group>"; };
 		84F6A6911CDDA85400CE1A81 /* AppSurveyCouchDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSurveyCouchDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F6A6941CDDA85400CE1A81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84F6A6961CDDA85400CE1A81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84F6A6961CDDA85400CE1A81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = AppSurveyCouchDB/ViewController.swift; sourceTree = "<group>"; };
 		84F6A6991CDDA85400CE1A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84F6A69B1CDDA85400CE1A81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84F6A69E1CDDA85400CE1A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84F6A6A01CDDA85400CE1A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F6A6A61CDDA86100CE1A81 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		84F6A6A81CDDA86C00CE1A81 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		84F6A6AA1CDDA88000CE1A81 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		84F6A6AC1CDDA89200CE1A81 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = /usr/lib/libz.1.dylib; sourceTree = "<absolute>"; };
+		84F6A6AE1CDDA8A400CE1A81 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = /usr/lib/libsqlite3.dylib; sourceTree = "<absolute>"; };
+		84FDAEA41CEC254E0009E9F4 /* SSRadioButtonsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSRadioButtonsController.swift; sourceTree = "<group>"; };
+		84FDAEA51CEC254E0009E9F4 /* SSRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSRadioButton.swift; sourceTree = "<group>"; };
+		8DF889AE2B96548BFFEE29A3 /* Pods_AppSurveyCouchDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppSurveyCouchDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0481B732017F54956303A7 /* Pods-AppSurveyCouchDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppSurveyCouchDB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppSurveyCouchDB/Pods-AppSurveyCouchDB.debug.xcconfig"; sourceTree = "<group>"; };
+		CDDDEA099125D662EC1802B2 /* Pods-AppSurveyCouchDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppSurveyCouchDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppSurveyCouchDB/Pods-AppSurveyCouchDB.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +62,76 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F6A6AF1CDDA8A400CE1A81 /* libsqlite3.dylib in Frameworks */,
+				84F6A6AD1CDDA89200CE1A81 /* libz.1.dylib in Frameworks */,
+				84F6A6AB1CDDA88000CE1A81 /* CFNetwork.framework in Frameworks */,
+				84F6A6A91CDDA86C00CE1A81 /* Security.framework in Frameworks */,
+				044EDE9A1CF04B240058DB71 /* CouchbaseLiteListener.framework in Frameworks */,
+				84F6A6A71CDDA86100CE1A81 /* SystemConfiguration.framework in Frameworks */,
+				A47B7C3033DB6053B1FE7C02 /* Pods_AppSurveyCouchDB.framework in Frameworks */,
+				044EDE991CF04B240058DB71 /* CouchbaseLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044EDE961CF04B0C0058DB71 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				044EDE971CF04B240058DB71 /* CouchbaseLite.framework */,
+				044EDE981CF04B240058DB71 /* CouchbaseLiteListener.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		044EDE9B1CF04C480058DB71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				044EDE9C1CF04C5E0058DB71 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		044EDE9E1CF04C670058DB71 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				044EDE9F1CF04C720058DB71 /* TwitterClient.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		044EDEA31CF04EBE0058DB71 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				044EDEA41CF04ECC0058DB71 /* Utis.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		6C8C97C1B21D19C3256DD4FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA0481B732017F54956303A7 /* Pods-AppSurveyCouchDB.debug.xcconfig */,
+				CDDDEA099125D662EC1802B2 /* Pods-AppSurveyCouchDB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		84F6A6881CDDA85400CE1A81 = {
 			isa = PBXGroup;
 			children = (
+				044EDEA31CF04EBE0058DB71 /* Utils */,
+				044EDE9E1CF04C670058DB71 /* API */,
+				044EDE9B1CF04C480058DB71 /* Model */,
+				044EDE961CF04B0C0058DB71 /* Framework */,
+				84FDAEA31CEC253F0009E9F4 /* External */,
+				84FDAEA21CEC252C0009E9F4 /* Helper */,
+				84FDAEA11CEC251A0009E9F4 /* ViewControllers */,
+				84FDAEA01CEC250B0009E9F4 /* Frameworks */,
 				84F6A6931CDDA85400CE1A81 /* AppSurveyCouchDB */,
 				84F6A6921CDDA85400CE1A81 /* Products */,
+				6C8C97C1B21D19C3256DD4FE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +147,52 @@
 			isa = PBXGroup;
 			children = (
 				84F6A6941CDDA85400CE1A81 /* AppDelegate.swift */,
-				84F6A6961CDDA85400CE1A81 /* ViewController.swift */,
 				84F6A6981CDDA85400CE1A81 /* Main.storyboard */,
 				84F6A69B1CDDA85400CE1A81 /* Assets.xcassets */,
 				84F6A69D1CDDA85400CE1A81 /* LaunchScreen.storyboard */,
 				84F6A6A01CDDA85400CE1A81 /* Info.plist */,
+				044EDE931CF04AEE0058DB71 /* AppSurveyCouchDB-Bridging-Header.h */,
 			);
 			path = AppSurveyCouchDB;
+			sourceTree = "<group>";
+		};
+		84FDAEA01CEC250B0009E9F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F6A6AE1CDDA8A400CE1A81 /* libsqlite3.dylib */,
+				84F6A6AC1CDDA89200CE1A81 /* libz.1.dylib */,
+				84F6A6AA1CDDA88000CE1A81 /* CFNetwork.framework */,
+				84F6A6A81CDDA86C00CE1A81 /* Security.framework */,
+				84F6A6A61CDDA86100CE1A81 /* SystemConfiguration.framework */,
+				8DF889AE2B96548BFFEE29A3 /* Pods_AppSurveyCouchDB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84FDAEA11CEC251A0009E9F4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84F6A6961CDDA85400CE1A81 /* ViewController.swift */,
+				044EDEA11CF04D0B0058DB71 /* loginVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		84FDAEA21CEC252C0009E9F4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8458573A1CDDCB5E00B794B8 /* Utilities.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		84FDAEA31CEC253F0009E9F4 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				84FDAEA41CEC254E0009E9F4 /* SSRadioButtonsController.swift */,
+				84FDAEA51CEC254E0009E9F4 /* SSRadioButton.swift */,
+			);
+			name = External;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84F6A6A31CDDA85400CE1A81 /* Build configuration list for PBXNativeTarget "AppSurveyCouchDB" */;
 			buildPhases = (
+				67867DD5DA6EA25A91B9D9A3 /* 📦 Check Pods Manifest.lock */,
 				84F6A68D1CDDA85400CE1A81 /* Sources */,
 				84F6A68E1CDDA85400CE1A81 /* Frameworks */,
 				84F6A68F1CDDA85400CE1A81 /* Resources */,
+				52F6C97B8FC3B20E5EF872BB /* 📦 Embed Pods Frameworks */,
+				1A54DD9A4F7F5426D9B93E03 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +265,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A54DD9A4F7F5426D9B93E03 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppSurveyCouchDB/Pods-AppSurveyCouchDB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52F6C97B8FC3B20E5EF872BB /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppSurveyCouchDB/Pods-AppSurveyCouchDB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67867DD5DA6EA25A91B9D9A3 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84F6A68D1CDDA85400CE1A81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8458573B1CDDCB5E00B794B8 /* Utilities.swift in Sources */,
+				044EDEA51CF04ECC0058DB71 /* Utis.swift in Sources */,
+				84FDAEA61CEC254E0009E9F4 /* SSRadioButtonsController.swift in Sources */,
+				044EDEA21CF04D0B0058DB71 /* loginVC.swift in Sources */,
+				044EDE9D1CF04C5E0058DB71 /* User.swift in Sources */,
 				84F6A6971CDDA85400CE1A81 /* ViewController.swift in Sources */,
+				044EDEA01CF04C720058DB71 /* TwitterClient.swift in Sources */,
 				84F6A6951CDDA85400CE1A81 /* AppDelegate.swift in Sources */,
+				84FDAEA71CEC254E0009E9F4 /* SSRadioButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,23 +437,44 @@
 		};
 		84F6A6A41CDDA85400CE1A81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA0481B732017F54956303A7 /* Pods-AppSurveyCouchDB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppSurveyCouchDB",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AppSurveyCouchDB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = baoTranIOS.AppSurveyCouchDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppSurveyCouchDB/AppSurveyCouchDB-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		84F6A6A51CDDA85400CE1A81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDDDEA099125D662EC1802B2 /* Pods-AppSurveyCouchDB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppSurveyCouchDB",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AppSurveyCouchDB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = baoTranIOS.AppSurveyCouchDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppSurveyCouchDB/AppSurveyCouchDB-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -287,6 +497,7 @@
 				84F6A6A51CDDA85400CE1A81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -16,20 +16,14 @@ class loginVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func onLoginTwitter(sender: UIButton) {
+        TwitterClient.sharedInstance.login({ () -> () in
+            
+            self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
+            //            print("I've logged in!")
+            
+        }) { (error: NSError) -> () in
+            print("Error \(error.localizedDescription)")
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -1,0 +1,6 @@
+framework module Pods_AppSurveyCouchDB {
+  umbrella header "Pods-AppSurveyCouchDB-umbrella.h"
+
+  export *
+  module * { export * }
+}
