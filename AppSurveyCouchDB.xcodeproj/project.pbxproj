@@ -13,6 +13,8 @@
 		044EDEA01CF04C720058DB71 /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044EDE9F1CF04C720058DB71 /* TwitterClient.swift */; };
 		044EDEA21CF04D0B0058DB71 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044EDEA11CF04D0B0058DB71 /* loginVC.swift */; };
 		044EDEA51CF04ECC0058DB71 /* Utis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044EDEA41CF04ECC0058DB71 /* Utis.swift */; };
+		044EDEA71CF19B290058DB71 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044EDEA61CF19B290058DB71 /* RegisterVC.swift */; };
+		04F042D91CF9421300899125 /* selectTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F042D81CF9421300899125 /* selectTimeVC.swift */; };
 		8458573B1CDDCB5E00B794B8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8458573A1CDDCB5E00B794B8 /* Utilities.swift */; };
 		84F6A6951CDDA85400CE1A81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6A6941CDDA85400CE1A81 /* AppDelegate.swift */; };
 		84F6A6971CDDA85400CE1A81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6A6961CDDA85400CE1A81 /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 		044EDE9F1CF04C720058DB71 /* TwitterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterClient.swift; sourceTree = "<group>"; };
 		044EDEA11CF04D0B0058DB71 /* loginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
 		044EDEA41CF04ECC0058DB71 /* Utis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utis.swift; sourceTree = "<group>"; };
+		044EDEA61CF19B290058DB71 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		04F042D81CF9421300899125 /* selectTimeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = selectTimeVC.swift; sourceTree = "<group>"; };
 		8458573A1CDDCB5E00B794B8 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = AppSurveyCouchDB/Utilities.swift; sourceTree = "<group>"; };
 		84F6A6911CDDA85400CE1A81 /* AppSurveyCouchDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSurveyCouchDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F6A6941CDDA85400CE1A81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 			children = (
 				84F6A6961CDDA85400CE1A81 /* ViewController.swift */,
 				044EDEA11CF04D0B0058DB71 /* loginVC.swift */,
+				044EDEA61CF19B290058DB71 /* RegisterVC.swift */,
+				04F042D81CF9421300899125 /* selectTimeVC.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -327,6 +333,8 @@
 				044EDEA01CF04C720058DB71 /* TwitterClient.swift in Sources */,
 				84F6A6951CDDA85400CE1A81 /* AppDelegate.swift in Sources */,
 				84FDAEA71CEC254E0009E9F4 /* SSRadioButton.swift in Sources */,
+				044EDEA71CF19B290058DB71 /* RegisterVC.swift in Sources */,
+				04F042D91CF9421300899125 /* selectTimeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

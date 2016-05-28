@@ -11,7 +11,7 @@ import UIKit
 
 //SSRadioButtonControllerDelegate là 1 cái class dùng để tạo ra những cái nút dạng ô radio button
 
-class ViewController: UIViewController, SSRadioButtonControllerDelegate {
+class ViewController: UIViewController, SSRadioButtonControllerDelegate, dataEnteredDelegate {
 
     //MARK: IBOutlet
     
@@ -33,6 +33,7 @@ class ViewController: UIViewController, SSRadioButtonControllerDelegate {
     
     @IBOutlet weak var txtAnswer04: UITextField!
     
+    @IBOutlet weak var lblTest: UILabel!
     //MARK: Biến Database
     
     var database: CBLDatabase!
@@ -60,6 +61,7 @@ class ViewController: UIViewController, SSRadioButtonControllerDelegate {
     //Khai báo con trỏ chạy câu hỏi và câu trả lời
     var indexAnswerQuestion = 0
     
+    var timer : Int = Int()
     //Hàm này dùng để truy xuất đến Database
     func useDatabase(database: CBLDatabase!) -> Bool {
         guard database != nil else {return false} //Kiểm tra nếu rỗng tức database bị xoá thì thoát ứng dụng
@@ -116,6 +118,8 @@ class ViewController: UIViewController, SSRadioButtonControllerDelegate {
         
         self.lblQuestion.text = String("Câu \(indexAnswerQuestion + 1) \(question)") //Xuất câu hỏi lên label
         self.btnAnswer.setTitle(String("\(answer)"), forState: .Normal) //Xuất câu trả lời lên nút, này làm nhiều nút em chưa làm, chỉ mới test 1 nút answer
+        
+        
     }
 
     //Hàm này để ẩn keyboard sau khi nhập liệu xong
@@ -262,6 +266,18 @@ class ViewController: UIViewController, SSRadioButtonControllerDelegate {
         if User.currentUser != nil {
             TwitterClient.sharedInstance.logout()
             self.dismissViewControllerAnimated(true, completion: nil)
+        }
+    }
+    
+    func userDidSelectTime(time: Int) {
+        self.timer = time
+        print("You just click on timer \(timer)")
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "Timer30" {
+            let selectTimeViewController : selectTimeVC = segue.destinationViewController as! selectTimeVC
+            selectTimeViewController.delegate = self
         }
     }
 }
