@@ -304,7 +304,6 @@
                                 <state key="normal" title="30s"/>
                                 <connections>
                                     <action selector="button30s:" destination="SFc-L4-3VS" eventType="touchUpInside" id="Paz-JN-3Yx"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="Timer30" id="HFQ-RC-rli"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJF-DI-8e0">
@@ -312,7 +311,6 @@
                                 <state key="normal" title="60s"/>
                                 <connections>
                                     <action selector="button60s:" destination="SFc-L4-3VS" eventType="touchUpInside" id="ucF-Bm-Wav"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Q8h-KD-C6k"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lw6-nJ-BDy">
@@ -320,7 +318,6 @@
                                 <state key="normal" title="90s"/>
                                 <connections>
                                     <action selector="button90s:" destination="SFc-L4-3VS" eventType="touchUpInside" id="pjv-xD-RHB"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="IQI-nN-dt5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please select the time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anx-ZA-gTa">
@@ -339,6 +336,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="Timer30" id="bPL-nK-XLh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ix-gW-0kx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -363,7 +363,4 @@
             <point key="canvasLocation" x="417" y="291"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="HFQ-RC-rli"/>
-    </inferredMetricsTieBreakers>
 </document>

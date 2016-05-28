@@ -11,7 +11,7 @@ import UIKit
 
 //SSRadioButtonControllerDelegate là 1 cái class dùng để tạo ra những cái nút dạng ô radio button
 
-class ViewController: UIViewController, SSRadioButtonControllerDelegate, dataEnteredDelegate {
+class ViewController: UIViewController, SSRadioButtonControllerDelegate {
 
     //MARK: IBOutlet
     
@@ -93,6 +93,9 @@ class ViewController: UIViewController, SSRadioButtonControllerDelegate, dataEnt
         radioButtonController = SSRadioButtonsController(buttons: btnAnswer)
         radioButtonController!.delegate = self
         radioButtonController!.shouldLetDeSelect = true
+        
+        
+        print("You just click on timer \(self.timer)")
     }
     
     override func viewDidLoad() {
@@ -269,16 +272,17 @@ class ViewController: UIViewController, SSRadioButtonControllerDelegate, dataEnt
         }
     }
     
-    func userDidSelectTime(time: Int) {
-        self.timer = time
-        print("You just click on timer \(timer)")
-    }
+//    func userDidSelectTime(time: Int) {
+//        self.timer = time
+//        print("You just click on timer \(timer)")
+//    }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "Timer30" {
-            let selectTimeViewController : selectTimeVC = segue.destinationViewController as! selectTimeVC
-            selectTimeViewController.delegate = self
-        }
-    }
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "Timer30" {
+//            let selectTimeViewController : selectTimeVC = segue.destinationViewController as! selectTimeVC
+//            selectTimeViewController.delegate = self
+//            
+//        }
+//    }
 }
 
