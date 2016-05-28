@@ -96,6 +96,17 @@ class ViewController: UIViewController, SSRadioButtonControllerDelegate {
         
         
         print("You just click on timer \(self.timer)")
+        
+        
+        
+    }
+    
+    func message(){
+        //print("ABC")
+        let alert = UIAlertController(title: "Time'up", message: "We ran out of time", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+        
     }
     
     override func viewDidLoad() {
@@ -122,7 +133,7 @@ class ViewController: UIViewController, SSRadioButtonControllerDelegate {
         self.lblQuestion.text = String("Câu \(indexAnswerQuestion + 1) \(question)") //Xuất câu hỏi lên label
         self.btnAnswer.setTitle(String("\(answer)"), forState: .Normal) //Xuất câu trả lời lên nút, này làm nhiều nút em chưa làm, chỉ mới test 1 nút answer
         
-        
+        let messageTimer = NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(self.timer), target: self, selector: #selector(self.message), userInfo: nil, repeats: false)
     }
 
     //Hàm này để ẩn keyboard sau khi nhập liệu xong

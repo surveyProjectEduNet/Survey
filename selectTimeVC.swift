@@ -31,18 +31,18 @@ class selectTimeVC: UIViewController {
     }
     
     @IBAction func button30s(sender: AnyObject) {
-        let time: Int = 30
+        let time: Int = 1
         print("\(time)")
         self.performSegueWithIdentifier("Timer30", sender: NSNumber(integer: time))
     }
     @IBAction func button60s(sender: AnyObject) {
-        let time: Int = 60
+        let time: Int = 2
         print("\(time)")
         self.performSegueWithIdentifier("Timer30", sender: NSNumber(integer: time))
     }
     
     @IBAction func button90s(sender: AnyObject) {
-        let time: Int = 90
+        let time: Int = 3
         print("\(time)")
         self.performSegueWithIdentifier("Timer30", sender: NSNumber(integer: time))
     }
