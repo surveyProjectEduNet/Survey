@@ -44,6 +44,13 @@
                                     <action selector="onLoginTwitter:" destination="VhI-gO-IeV" eventType="touchUpInside" id="fQt-oS-q7v"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92i-2B-qEW">
+                                <rect key="frame" x="235" y="262" width="130" height="30"/>
+                                <state key="normal" title="Login on Facebook"/>
+                                <connections>
+                                    <action selector="onLoginFacebook:" destination="VhI-gO-IeV" eventType="touchUpInside" id="BXt-hl-Q29"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

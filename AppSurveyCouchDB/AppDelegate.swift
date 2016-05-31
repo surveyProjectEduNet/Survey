@@ -8,6 +8,8 @@
 
 import UIKit
 import BDBOAuth1Manager
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 private let kDatabaseName = "example02" //Đây là tên Database
 
@@ -56,8 +58,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIAlertViewDelegate {
             let vc = storyboard.instantiateViewControllerWithIdentifier("MainScreenNavigationController")
             window?.rootViewController = vc
         }
-        return true
+        return FBSDKApplicationDelegate.sharedInstance()
+            .application(application, didFinishLaunchingWithOptions: launchOptions)
     }
+    
     
     //Hàm để xuất Alert thông báo lỗi bình thường
     func showAlert(var message: String, forError error: NSError?) {
@@ -137,6 +141,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIAlertViewDelegate {
     }
     
     func applicationDidBecomeActive(application: UIApplication) {
+        FBSDKAppEvents.activateApp()
         
     }
     
@@ -145,8 +150,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIAlertViewDelegate {
     }
     
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
-        TwitterClient.sharedInstance.handleOpenUrl(url)
-        return true
+        if flat == true {
+            return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+        }else {
+            TwitterClient.sharedInstance.handleOpenUrl(url)
+            return true
+        }
     }
 }
 

@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import FBSDKCoreKit
+import FBSDKLoginKit
 protocol dataEnteredDelegate {
     func userDidSelectTime(time: Int)
 }
@@ -28,6 +29,11 @@ class selectTimeVC: UIViewController {
             TwitterClient.sharedInstance.logout()
             self.dismissViewControllerAnimated(true, completion: nil)
         }
+//        else {
+//            let loginManager = FBSDKLoginManager()
+//            loginManager.logOut()
+//            self.dismissViewControllerAnimated(true, completion: nil)
+//        }
     }
     
     @IBAction func button30s(sender: AnyObject) {
