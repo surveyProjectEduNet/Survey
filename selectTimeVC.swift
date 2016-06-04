@@ -24,15 +24,19 @@ class selectTimeVC: UIViewController {
     
     
     @IBAction func logOut(sender: UIBarButtonItem) {
-        if User.currentUser != nil {
+        if User.currentUser != nil || flat == false {
             print("Click on logOut button")
             TwitterClient.sharedInstance.logout()
             self.dismissViewControllerAnimated(true, completion: nil)
         }
 //        else {
-//            let loginManager = FBSDKLoginManager()
-//            loginManager.logOut()
-//            self.dismissViewControllerAnimated(true, completion: nil)
+        if flat == true || NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) != nil {
+            let loginManager = FBSDKLoginManager()
+            loginManager.logOut()
+            User.currentUser = nil
+            NSUserDefaults.standardUserDefaults().setValue(nil, forKey: KEY_UID)
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
 //        }
     }
     

@@ -17,6 +17,13 @@ class loginVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        if NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) != nil {
+            print("There is an user")
+            self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
+        }
+    }
 
     @IBAction func onLoginTwitter(sender: UIButton) {
         flat = false

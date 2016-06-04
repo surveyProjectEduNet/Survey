@@ -9,5 +9,5 @@
 import Foundation
 
 var flat = Bool()
-let KEY_UID = ""
+let KEY_UID = "uid"
 let SEGUE_LOGGED_IN = "MainScreen"
